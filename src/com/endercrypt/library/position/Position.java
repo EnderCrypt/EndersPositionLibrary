@@ -76,10 +76,10 @@ public class Position implements Serializable
 		return Math.atan2((y - this.y), (x - this.x));
 	}
 
-	public void add(Motion vector)
+	public void add(Motion motion)
 	{
-		x += vector.x;
-		y += vector.y;
+		x += motion.x;
+		y += motion.y;
 	}
 
 	public void add(double direction, double length)
